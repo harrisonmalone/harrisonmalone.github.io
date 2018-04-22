@@ -112,6 +112,13 @@ li {
   width: 100px;
 }
 
+.email-text {
+    font-family: CustomSerif,Georgia,Cambria,'Times New Roman',serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+
 @media print {
   a[href]:after {
     content: none !important;
