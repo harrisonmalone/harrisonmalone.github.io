@@ -73,6 +73,10 @@ a:active {
   text-decoration: none;
 }
 
+a:focus {
+  text-decoration: none;
+}
+
 ul {  font-family: CustomSerif,Georgia,Cambria,'Times New Roman',serif;
   margin: 10px 21px 10px 0px;
   font-weight: 400;
