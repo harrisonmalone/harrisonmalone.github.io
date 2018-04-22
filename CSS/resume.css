@@ -111,3 +111,9 @@ li {
 .icon-width {
   width: 100px;
 }
+
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+}
