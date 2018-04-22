@@ -1,20 +1,15 @@
+/*wrap*/
+
 #wrap {
   padding: 21px 10px;
 }
 
 #entire {
-  max-width: 732px;
+  max-width: 650px;
   margin: 0 auto;
 }
 
-#date {
-  font-family: CustomSansSerif,'Lucida Grande',Arial,sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  color: #79828B;
-  margin: 0 21px;
-  font-style: normal;
-}
+/*font styles*/
 
 h1 {
     font-family: CustomSansSerif,'Lucida Grande',Arial,sans-serif;
@@ -41,12 +36,6 @@ p {
   font-style: normal;
   font-size: 18px;
   line-height: 1.58;
-}
-
-#picstyle {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
 }
 
 a {
@@ -97,6 +86,8 @@ tr:nth-child(even) {
   background-color: #a1bfc9;
 }
 
+/*unique styles*/
+
 .video-responsive{
   overflow:hidden;
   padding-bottom:56.25%;
@@ -111,15 +102,6 @@ tr:nth-child(even) {
   position:absolute;
 }
 
-#block {
-  max-width: 690px;
-  height: auto;
-  border-radius: 3px;
-  display:block;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 1px 0 1px 0;
-}
-
 #picstyleblock {
   display: block;
   margin: 10px auto;
@@ -129,4 +111,19 @@ tr:nth-child(even) {
 #quote {
   border-left: 3px solid;
   padding: 0 20px;
+}
+
+#date {
+  font-family: CustomSansSerif,'Lucida Grande',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #79828B;
+  margin: 0 21px;
+  font-style: normal;
+}
+
+#picstyle {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
 }
