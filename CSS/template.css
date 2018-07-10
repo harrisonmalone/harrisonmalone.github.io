@@ -127,3 +127,18 @@ tr:nth-child(even) {
   margin: 0 auto;
   width: 100%;
 }
+
+/* titles fix on photos page */
+
+.label-primary{background-color:#337ab7}
+
+.label{display:inline;padding:.2em .6em .3em;font-size:75%;font-weight:700;line-height:1;color:#fff;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:.25em;font-family:sans-serif;}
+
+.names {
+  font-family: CustomSerif,Georgia,Cambria,'Times New Roman',serif;
+  margin: 12px 21px 12px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.58;
+}
