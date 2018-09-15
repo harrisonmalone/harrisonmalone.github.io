@@ -88,32 +88,13 @@ tr:nth-child(even) {
 
 /*unique styles*/
 
-.video-responsive{
-  overflow:hidden;
-  padding-bottom:56.25%;
-  position:relative;
-  height:0;
-}
-.video-responsive iframe{
-  left:0;
-  top:0;
-  height:100%;
-  width:100%;
-  position:absolute;
-}
-
-#picstyleblock {
+.picstyle {
   display: block;
-  margin: 10px auto;
-  width: 100%
+  margin: 0 auto;
+  width: 100%;
 }
 
-#quote {
-  border-left: 3px solid;
-  padding: 0 20px;
-}
-
-#date {
+.date {
   font-family: CustomSansSerif,'Lucida Grande',Arial,sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -122,17 +103,25 @@ tr:nth-child(even) {
   font-style: normal;
 }
 
-#picstyle {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
+/* labels */
+
+.label-primary{
+  background-color:#337ab7
 }
 
-/* titles fix on photos page */
-
-.label-primary{background-color:#337ab7}
-
-.label{display:inline;padding:.2em .6em .3em;font-size:75%;font-weight:700;line-height:1;color:#fff;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:.25em;font-family:sans-serif;}
+.label{
+  display:inline;
+  padding:.2em .6em .3em;
+  font-size:75%;
+  font-weight:700;
+  line-height:1;
+  color:#fff;
+  text-align:center;
+  white-space:nowrap;
+  vertical-align:baseline;
+  border-radius:.25em;
+  font-family:sans-serif;
+}
 
 .names {
   font-family: CustomSerif,Georgia,Cambria,'Times New Roman',serif;
