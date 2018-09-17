@@ -16,7 +16,7 @@
       <!-- <h4>Hi there! I'm Harrison.</h4> -->
       <p>I'm a junior full stack developer teaching others how to code at <a href="https://coderacademy.edu.au/" target="_blank">Coder Academy</a>. I thrive on solving problems in Ruby, CSS and JavaScript.</p>
       <div style="margin:0 21px 16px;">
-        <img data-src="img/profilepic.png" alt="harrison malones profile picture">
+        <img class="picstyle" data-src="img/profilepic.png" alt="harrison malones profile picture">
       </div>
       <h4>So what else do you do?</h4>
       <ul style="margin-top: 0px">
@@ -34,7 +34,8 @@
     </div>
   </div>
 </body>
-<script>[].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
+<script>
+  [].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
     img.setAttribute('src', img.getAttribute('data-src'));
     img.onload = function() {
       img.removeAttribute('data-src');
