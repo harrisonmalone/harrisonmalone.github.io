@@ -132,7 +132,7 @@ img[data-src] {
   padding:.2em .6em .3em;
   font-size:75%;
   font-weight:700;
-  line-height:1;
+  line-height: 1.58;
   color:#fff;
   text-align:center;
   white-space:nowrap;
@@ -147,5 +147,5 @@ img[data-src] {
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
-  line-height: 2.5;
+  line-height: 1.58;
 }
