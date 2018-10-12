@@ -121,6 +121,19 @@ img[data-src] {
   opacity: 0;
 }
 
+.play-button {
+  background: rgb(228, 229, 230, 0.3);
+  max-width: 120px;
+  border-radius: 8px;
+  padding: 2px 0px;
+  margin: 0px 21px;
+}
+
+.play-button p {
+  font-size: 14px;
+  margin: 5px 10px;
+}
+
 /* labels */
 
 .label-primary{
