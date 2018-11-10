@@ -31,3 +31,8 @@ a {
 p {
     font-family: sans-serif;
 }
+
+.header-link {
+    text-decoration: none;
+    color: black;
+}
