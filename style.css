@@ -1,7 +1,5 @@
-.wrapper {
-    max-width: 700px;
-    margin: 0 auto;
-  }
+// elements 
+
 ul {
     padding-left: 0px;
 }
@@ -20,11 +18,9 @@ h1, h2 {
     border-bottom: 1px dotted;
     font-family: sans-serif;
 }
-
 h3, h4, h5, h6 {
     font-family: sans-serif;
 }
-
 a {
     font-family: sans-serif;
 }
@@ -32,6 +28,12 @@ p {
     font-family: sans-serif;
 }
 
+// classes
+
+.wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+  }
 .header-link {
     text-decoration: none;
     color: black;
