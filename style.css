@@ -1,4 +1,4 @@
-// elements 
+/* elements  */
 
 ul {
     padding-left: 0px;
@@ -28,7 +28,7 @@ p {
     font-family: sans-serif;
 }
 
-// classes
+/* classes */
 
 .wrapper {
     max-width: 700px;
