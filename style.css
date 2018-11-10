@@ -1,0 +1,28 @@
+.wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+ul {
+    padding-left: 0px;
+}
+li {
+    display: inline-block;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+pre {
+    white-space: pre-wrap;
+}
+code {
+    font-size: 18px;
+}
+h2 {
+    border-bottom: 1px dotted;
+    font-family: sans-serif;
+}
+a {
+    font-family: sans-serif;
+}
+p {
+    font-family: sans-serif;
+}
