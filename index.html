@@ -22,6 +22,7 @@
         <p>window.location returns a url kind of object, search returns whatever is after the ? or the query string of the url</p>
         <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr">substr</a> returns a portion of the string, starting at the specified index and extending for a given number of characters afterward</p>
         <p>more complex appending stuff to the dom</p>
+        <pre><code>element.insertAdjacentHTML(position, text)</code></pre>
         <p>as abilities and moves were an array we had to loop through them, insert the text into a li node and then append that li node to a ul parent</p>
         <p>played around with <a href="https://gist.github.com/harrisonmalone/3153c3afd5d6200fbb31f845ae061f22">factory functions</a></p>
         <p>completed <a href="https://gist.github.com/harrisonmalone/0b9cd5e249b230acda43993a59f734b7">pokedex code</a>, will keep working on it in coming days</p>
@@ -92,7 +93,7 @@
         <p>looked at requests and responses, requesting data from a rails app (getting json) and the responding with the json we&#8217;re asking for that we access with js</p>
         <p>the <a href="https://edgeguides.rubyonrails.org/api_app.html">rails guide</a> is an excellent resource for creating api app</p>
         <p>created a rails app</p>
-        <pre><code>rails new bookstore &#8211;api</code></pre>
+        <pre><code>rails new bookstore --api</code></pre>
         <p>scaffolded a book model / controller with a few attributes</p>
         <p>seeded the database with create</p>
         <p>remember to add that special line of code in routes so that our errors are in json format</p>
