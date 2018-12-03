@@ -10,6 +10,66 @@
 </head>
 <body>
     <div class="wrapper">
+        <h2 id="nov-30"><a class="header-link" href="#nov-30">NOV 30</a></h2>
+        <p>in the morning waited for jon to get back with his laptop, until that time students went and did more challenges</p>
+        <p>recap from yesterday</p>
+        <p>what is node, what is express</p>
+        <p>middleware, gives us access to the request body, and converts it to a json object</p>
+        <p>object destructuring, accessing the final key in an object by using it's name in the variable declaration</p>
+        <pre><code>const { name } = req.body</code></pre>
+        <p>npm start is special, you can leave off the word run</p>
+        <p>install mongoose</p>
+        <pre><code>mongoose.connect('mongodb://localhost:27017/nameofdb')</code></pre>
+        <p>showing if mongoose has connected with .on</p>
+        <p>separate folder for our models</p>
+        <p>the we have files with our model names</p>
+        <p>defining a schema</p>
+        <pre><code>pokemonSchema = new.mongoose.Schema({})</code></pre>
+        <pre><code>mongoose.model('Pokemon', pokemonSchema)</code></pre>
+        <p>export it out</p>
+        <p>require it back into the main file</p>
+        <p>by connecting the model pokemon to the pokedex database we automatically create plural (pokemons) collection</p>
+        <p>after lunch students either did a mongoose challenge or the <a href="https://gist.github.com/harrisonmalone/ce59a6132000d4f26d0c1fd92109fdc7">object destructuring challenge</a> i wrote</p>
+        <p>then we had drinks to finish off term</p>
+        <h2 id="nov-29"><a class="header-link" href="#nov-29">NOV 29</a></h2>
+        <p>document databases are great in cases where you need some persistence quickly</p>
+        <p>but in cases where your database is enormous then a relational database might be a better option</p>
+        <p>mongo is written to emulate the structure of json</p>
+        <p>today we're replacing the array task part of yesterday with a real database, to get some persistence happening</p>
+        <p>the <a href="https://www.mongodb.com/blog/post/the-modern-application-stack-part-1-introducing-the-mean-stack">MERN stack</a></p>
+        <pre><code>db use pokedex</code></pre>
+        <p>this creates the db</p>
+        <pre><code>db.createCollection('pokemon')</code></pre>
+        <p>this creates the collection</p>
+        <p>using _id</p>
+        <pre><code>db.pokemon.insert({_id: 1, name: 'something'})</code></pre>
+        <p>this inserts a pokemon document into the collection</p>
+        <p>so we created a collection and filled it with some documents</p>
+        <p>how this compares to relational databases: collection is a table, documents are rows</p>
+        <p>when you say use databaseName then db is the shortcut to that database</p>
+        <p>you can pass it multiple objects by passing in an array</p>
+        <p>using .toArray on a cursor, a cursor is returned if you use .find so we need to convert it to an array to interact with it nicely</p>
+        <p>findOne just returns the object, not the cursor</p>
+        <pre><code>db.pokemon.update({name: 'something'}, {name: 'bulb'})</code></pre>
+        <p>it deletes additional fields</p>
+        <pre><code>db.pokemon.update({name: 'bulb'}, {$set: {name: 'bulbiii'}})</code></pre>
+        <p>this retains the original fields in your record</p>
+        <pre><code>db.pokemon.updateMany({}, {$set: {admin: false}})</code></pre>
+        <p>updates everything and sets it's admin to false</p>
+        <pre><code>db.pokemon.find({})</code></pre>
+        <p>finds all</p>
+        <pre><code>db.pokemon.remove({})</code></pre>
+        <p>removes all</p>
+        <p>mongo is case specific< unless you set a certain flag</p>
+        <p>finding pokemon in this file</p>
+        <p>setting a relationship between two different tables</p>
+        <p>using <a href="https://stackoverflow.com/questions/19441228/insert-json-file-into-mongodb">mongoimport</a></p>
+        <pre><code>mongoimport --jsonArray --db test --collection docs --file example2.json</code></pre>
+        <p>using <a href="https://docs.mongodb.com/manual/reference/method/db.collection.update/">upsert</a></p>
+        <h2 id="nov-28"><a class="header-link" href="#nov-28">NOV 28</a></h2>
+        <p>redid what we did in the previous day but extended it with todolist challenge</p>
+        <p>this involved finding a nice way to increment the ids and searching by ids</p>
+        <p>i think we also did some more catch up on challenges in the morning</p>
         <h2 id="nov-27"><a class="header-link" href="#nov-27">NOV 27</a></h2>
         <p>morning was a general time to revise whatever you wanted</p>
         <p>went through some maths</p>
