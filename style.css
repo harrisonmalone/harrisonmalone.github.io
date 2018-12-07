@@ -1,32 +1,18 @@
 /* elements  */
 
-ul {
-    padding-left: 0px;
-}
-li {
-    display: inline-block;
-    text-decoration: none;
-    font-family: sans-serif;
-}
-pre {
-    white-space: pre-wrap;
-}
-code {
-    font-size: 18px;
+p, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Code Pro', monospace;
     word-wrap: break-word;
 }
 h1, h2 {
     border-bottom: 1px dotted;
-    font-family: sans-serif;
-}
-h3, h4, h5, h6 {
-    font-family: sans-serif;
 }
 a {
-    font-family: sans-serif;
+    text-decoration: none;
+    color: dodgerblue;
 }
-p {
-    font-family: sans-serif;
+a:hover {
+    border-bottom: 1px solid dodgerblue;
 }
 
 /* classes */

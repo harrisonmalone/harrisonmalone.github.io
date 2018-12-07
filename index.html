@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Harrison Malone</title>
     <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -53,16 +54,16 @@
         <p>what is node, what is express</p>
         <p>middleware, gives us access to the request body, and converts it to a json object</p>
         <p>object destructuring, accessing the final key in an object by using it's name in the variable declaration</p>
-        <pre><code>const { name } = req.body</code></pre>
+        <p>const { name } = req.body</p>
         <p>npm start is special, you can leave off the word run</p>
         <p>install mongoose</p>
-        <pre><code>mongoose.connect('mongodb://localhost:27017/nameofdb')</code></pre>
+        <p>mongoose.connect('mongodb://localhost:27017/nameofdb')</p>
         <p>showing if mongoose has connected with .on</p>
         <p>separate folder for our models</p>
         <p>the we have files with our model names</p>
         <p>defining a schema</p>
-        <pre><code>pokemonSchema = new.mongoose.Schema({})</code></pre>
-        <pre><code>mongoose.model('Pokemon', pokemonSchema)</code></pre>
+        <p>pokemonSchema = new.mongoose.Schema({})</p>
+        <p>mongoose.model('Pokemon', pokemonSchema)</p>
         <p>export it out</p>
         <p>require it back into the main file</p>
         <p>by connecting the model pokemon to the pokedex database we automatically create plural (pokemons) collection</p>
@@ -74,12 +75,12 @@
         <p>mongo is written to emulate the structure of json</p>
         <p>today we're replacing the array task part of yesterday with a real database, to get some persistence happening</p>
         <p>the <a href="https://www.mongodb.com/blog/post/the-modern-application-stack-part-1-introducing-the-mean-stack">MERN stack</a></p>
-        <pre><code>db use pokedex</code></pre>
+        <p>db use pokedex</p>
         <p>this creates the db</p>
-        <pre><code>db.createCollection('pokemon')</code></pre>
+        <p>db.createCollection('pokemon')</p>
         <p>this creates the collection</p>
         <p>using _id</p>
-        <pre><code>db.pokemon.insert({_id: 1, name: 'something'})</code></pre>
+        <p>db.pokemon.insert({_id: 1, name: 'something'})</p>
         <p>this inserts a pokemon document into the collection</p>
         <p>so we created a collection and filled it with some documents</p>
         <p>how this compares to relational databases: collection is a table, documents are rows</p>
@@ -87,21 +88,21 @@
         <p>you can pass it multiple objects by passing in an array</p>
         <p>using .toArray on a cursor, a cursor is returned if you use .find so we need to convert it to an array to interact with it nicely</p>
         <p>findOne just returns the object, not the cursor</p>
-        <pre><code>db.pokemon.update({name: 'something'}, {name: 'bulb'})</code></pre>
+        <p>db.pokemon.update({name: 'something'}, {name: 'bulb'})</p>
         <p>it deletes additional fields</p>
-        <pre><code>db.pokemon.update({name: 'bulb'}, {$set: {name: 'bulbiii'}})</code></pre>
+        <p>db.pokemon.update({name: 'bulb'}, {$set: {name: 'bulbiii'}})</p>
         <p>this retains the original fields in your record</p>
-        <pre><code>db.pokemon.updateMany({}, {$set: {admin: false}})</code></pre>
+        <p>db.pokemon.updateMany({}, {$set: {admin: false}})</p>
         <p>updates everything and sets it's admin to false</p>
-        <pre><code>db.pokemon.find({})</code></pre>
+        <p>db.pokemon.find({})</p>
         <p>finds all</p>
-        <pre><code>db.pokemon.remove({})</code></pre>
+        <p>db.pokemon.remove({})</p>
         <p>removes all</p>
-        <p>mongo is case specific< unless you set a certain flag</p>
+        <p>mongo is case specific unless you set a certain flag</p>
         <p>finding pokemon in this file</p>
         <p>setting a relationship between two different tables</p>
         <p>using <a href="https://stackoverflow.com/questions/19441228/insert-json-file-into-mongodb">mongoimport</a></p>
-        <pre><code>mongoimport --jsonArray --db test --collection docs --file example2.json</code></pre>
+        <p>mongoimport --jsonArray --db test --collection docs --file example2.json</p>
         <p>using <a href="https://docs.mongodb.com/manual/reference/method/db.collection.update/">upsert</a></p>
         <h2 id="nov-28"><a class="header-link" href="#nov-28">NOV 28</a></h2>
         <p>redid what we did in the previous day but extended it with todolist challenge</p>
@@ -132,7 +133,7 @@
         <p>window.location returns a url kind of object, search returns whatever is after the ? or the query string of the url</p>
         <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr">substr</a> returns a portion of the string, starting at the specified index and extending for a given number of characters afterward</p>
         <p>more complex appending stuff to the dom</p>
-        <pre><code>element.insertAdjacentHTML(position, text)</code></pre>
+        <p>element.insertAdjacentHTML(position, text)</p>
         <p>as abilities and moves were an array we had to loop through them, insert the text into a li node and then append that li node to a ul parent</p>
         <p>played around with <a href="https://gist.github.com/harrisonmalone/3153c3afd5d6200fbb31f845ae061f22">factory functions</a></p>
         <p>completed <a href="https://gist.github.com/harrisonmalone/0b9cd5e249b230acda43993a59f734b7">pokedex code</a>, will keep working on it in coming days</p>
@@ -185,7 +186,7 @@
         <p>the challenge involved looping through the books and then appending them to the dom </p>
         <p>toFixed(2) gives you 2 decimal places on a price number (1230 needs to be 12.30)</p>
         <p>using <a href="https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/prepend">.prepend</a> to insert an element into the start of a node</p>
-        <pre><code>li.prepend(strong)</code></pre>
+        <p>li.prepend(strong)</p>
         <p>code from the <a href="https://gist.github.com/harrisonmalone/d953617bc6d33577ba4252a94d3631a2">challenge</a></p>
         <p>more challenges, applying some css to the books, POST request using REST client</p>
         <p>will be looking more at post requests tomorrow</p>
@@ -194,16 +195,16 @@
         <p>i bet we'll be using the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify">JSON.stringify()</a> method tomorrow</p>               
         <h2 id="nov-20"><a class="header-link" href="#nov-20">NOV 20</a></h2>
         <p>hoisting, function declarations are hoisted but not expressions</p>
-        <pre><code>function test() {}</code></pre>
+        <p>function test() {}</p>
         <p>this is hoisted</p>
-        <pre><code>const test = function() {}</code></pre>
+        <p>const test = function() {}</p>
         <p>this is not hoisted</p>
         <p>it's the same principle for variables, really nice explanation in <a href="http://adripofjavascript.com/blog/drips/variable-and-function-hoisting.html">this article</a></p>
         <p>today was mainly just a code along</p>
         <p>looked at requests and responses, requesting data from a rails app (getting json) and the responding with the json we&#8217;re asking for that we access with js</p>
         <p>the <a href="https://edgeguides.rubyonrails.org/api_app.html">rails guide</a> is an excellent resource for creating api app</p>
         <p>created a rails app</p>
-        <pre><code>rails new bookstore --api</code></pre>
+        <p>rails new bookstore --api</p>
         <p>scaffolded a book model / controller with a few attributes</p>
         <p>seeded the database with create</p>
         <p>remember to add that special line of code in routes so that our errors are in json format</p>
@@ -225,9 +226,9 @@
         <p>classes and objects </p>
         <p>looked very briefly at <a href="http://javascript.info/closure">closure</a>, need to look more into that
         <p>pointing to a variable</p>
-        <pre><code>let x = null</code></pre>
-        <pre><code>let y = 10</code></pre>
-        <pre><code>x = y</code></pre>
+        <p>let x = null</p>
+        <p>let y = 10</p>
+        <p>x = y</p>
         <p>think of variables as pointers to objects, when you assign directly to a variable, you are not modifying any objects you're merely repointing your variable to a different object</p>
         <p><a href="http://javascript.info/class-patterns">factory and constructor functions</a></p>
         <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind">.bind</a></p>
@@ -238,16 +239,16 @@
         <p>then we did a quick challenge</p>
         <p>discrete math recap</p>
         <p><a href="https://gist.github.com/harrisonmalone/1fcc6b2f9dabd873d668fa0b8643d7c5">decimal to hex count up chart</a></p>    
-        <pre><code>document.body.scrollHeight</code></pre>
+        <p>document.body.scrollHeight</p>
         <p>gets you the scrolling height of a given window</p>
-        <pre><code>window.scrollY</code></pre>
+        <p>window.scrollY</p>
         <p>gets you the scroll position</p>
         <p><a href="https://gist.github.com/harrisonmalone/6e197e6162a198058a3ec787847c648b">solution</a> to shelf and books challenge</p>
         <p><a href="https://gist.github.com/harrisonmalone/18873b9b933ffd6b9427826488088321">matts npm callback challenge</a></p>  
         <p>to inspect the given arguments in a method call there are a few options</p>
-        <pre><code>arguments</code></pre>
+        <p>arguments</p>
         <p>lets you see the arguments passed as an object</p>
-        <pre><code>function funcName(...args) { // code }</code></pre>
+        <p>function funcName(...args) { // code }</p>
         <p>gives you an <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments">array of arguments</a></p>
         <p>running this week, aim for tomorrow 8, thursday 8, friday 6, saturday and sunday 10+</p>
         <h2 id="nov-18"><a class="header-link" href="#nov-18">NOV 18</a></h2>
@@ -271,13 +272,13 @@
         <p>finally got around to watching the latest <a href="https://en.wikipedia.org/wiki/Star_Wars%3A_The_Last_Jedi">star wars</a>, i thought it wasn't too great preferred the first new one, sets up well for the last movie i guess</p>
         <h2 id="nov-15"><a class="header-link" href="#nov-15">NOV 15</a></h2>
         <p>good pacing for the day thus far</p>
-        <pre><code>'#'+Math.floor(Math.random()*16777215).toString(16)</code></pre>
+        <p>'#'+Math.floor(Math.random()*16777215).toString(16)</p>
         <p><a href="https://gist.github.com/harrisonmalone/1345bd4e4646efec452af3f8f20394b0">notes</a> from today, lots of great things to takeaway</p>
         <p>what matt asked from me, get some of the eventListener challenges from le wagon, rewrite some of the intermediate ruby challenges as js ones, could also grab some of the challenges from the first day of le wagon js</p>
         <p><a href="https://www.strava.com/activities/1966043958">run</a> was just a nice little tap with hamish, felt pretty decent</p> 
         <h2 id="nov-14"><a class="header-link" href="#nov-14">NOV 14</a></h2>
         <p>morning challenges</p>
-        <pre><code>Object.values(obj)</code></pre>
+        <p>Object.values(obj)</p>
         <p>this returns the values of an object</p>
         <p>did a recap of js callbacks</p>
         <p>looked at various examples of .forEach, .map, .filter etc </p>
@@ -310,7 +311,7 @@
         <p>the basics of javascript are extremely similar to ruby</p>
         <p>run tomorrow and thursday, try and get out for at least 10k both times</p>
         <p>maybe do the albert park lake run tomorrow</p>
-        <pre><code>.splice(0, 1)</code></pre>
+        <p>.splice(0, 1)</p>
         <p>replaces one element at the 0 position in the array, can also use it to insert into arrays</p>
         <h2 id="nov-11"><a class="header-link" href="#nov-11">NOV 11</a></h2>
         <p>till playing ball <a href="https://mobile.twitter.com/harrisonnmalone/status/1061397486231674880">slow motion video</a></p>
@@ -346,12 +347,12 @@
         <p>other idea i had for my photo app was to create empty description objects (number would be based on .count on the photos) when you create an album</p>
         <p>you would loop through the descriptions in the view, album.descriptions</p>
         <p>in the album view you would then have an edit option which would allow you to add content</p>
-        <pre><code>$ heroku pg:reset DATABASE</code></pre>
+        <p>$ heroku pg:reset DATABASE</p>
         <p>this command resets production database</p>
         <h2 id="nov-7"><a class="header-link" href="#nov-7">NOV 7</a></h2>
         <p>problems with the page build last night, i guess that's just a reality of using the github dns</p>
         <p>idea that i had in my head last night was to just have a constant and loop through it for the comments</p>
-        <pre><code>album.images.each_with_index</code></pre> 
+        <p>album.images.each_with_index</p> 
         <p>the constant could sit inside of the albums model</p>
         <p>this kind of works</p>
         <p>if i were to do the summary docs maybe launch my own website like this and host it somewhere</p>
@@ -381,7 +382,7 @@
         <p>was nice seeing hamish again in the morning what are the chances</p>
         <p>not too sure what i should do in regards to the meeting this morning</p>
         <p>some good solutions for problems</p>
-        <pre><code>dependent: :nullify</code></pre> 
+        <p>dependent: :nullify</p> 
         <p>to set foreign key id as nil when its dependency object is deleted</p>
         <p>will be a nice day tomorrow</p>
         <p>run, code, nan&#8217;s birthday</p>
@@ -396,8 +397,8 @@
         <p>worked out how to plugin bootstrap</p>
         <p>follow these <a href="https://github.com/twbs/bootstrap-rubygem">docs</a></p>
         <p>some good work done for search this afternoon working on lilis app</p>
-        <pre><code>form_tag path, method: :get</code></pre>
-        <pre><code>text_field_tag :query, params[:query], placeholder: "Find a movie"</code></pre>
+        <p>form_tag path, method: :get</p>
+        <p>text_field_tag :query, params[:query], placeholder: "Find a movie"</p>
         <p>some issues with team dynamics</p>
         <p>rails app for my blog, naa i like having access to links too much, maybe something that allows me to write in markdown like that blog i built in jekyll a while a go, would be interesting to build that again</p>
         <p><a href="https://www.strava.com/activities/1938944727">run</a> was really hard as ate chips beforehand</p>
@@ -431,9 +432,9 @@
         <p>made some progress on my own marketplace app</p>
         <p>learnt how to push and pull in the proper open source way using upstream remotes</p>
         <p>add remote to pull code from main repo</p>
-        <pre><code>$ git add remote upstream &lt;remote-url&gt;</code></pre>
+        <p>$ git add remote upstream &lt;remote-url&gt;</p>
         <p>push branch to make pull request</p>
-        <pre><code>$ git push origin &lt;branch-name&gt;</code></pre>
+        <p>$ git push origin &lt;branch-name&gt;</p>
         <p>now working copy might be a legitimately powerful way of using my ipad, allows me to push anything up to harrisonmalone.com which is ideal for my diary and blog</p>
         <h2 id="oct-26"><a class="header-link" href="#oct-26">OCT 26</a></h2>
         <p>asset pipeline, how css and javascript get compressed </p>
