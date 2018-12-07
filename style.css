@@ -10,8 +10,6 @@ h1, h2 {
 a {
     text-decoration: none;
     color: dodgerblue;
-}
-a:hover {
     border-bottom: 1px solid dodgerblue;
 }
 h2 .header-link {
