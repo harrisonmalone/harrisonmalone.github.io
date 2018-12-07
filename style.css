@@ -14,13 +14,15 @@ a {
 a:hover {
     border-bottom: 1px solid dodgerblue;
 }
-
+h2 .header-link {
+    border-bottom: none;
+}
 /* classes */
 
 .wrapper {
     max-width: 700px;
     margin: 0 auto;
-  }
+}
 .header-link {
     text-decoration: none;
     color: black;
