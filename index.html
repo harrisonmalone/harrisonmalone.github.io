@@ -11,6 +11,14 @@
 </head>
 <body>
     <div class="wrapper">
+        <h2 id="dec-20"><a class="header-link" href="#dec-20">DEC 20</a></h2>
+        <p>middleware is just a function that runs before the (req, res) =&gt; callback occurs</p>
+        <p>hence the middleware name</p>
+        <p>we did an example where we found a user and then checked if the username and password were correct based on a post request that was sent from the client</p>
+        <p>we added to the request object so that it had a req.user key and a user as it's attribute which we then accessed in the app.post where we passed in the middleware</p>
+        <p>the status on the reponse is always set to 200, we can override it with the res.status() function</p>
+        <p>discovered that you can debug express in the same way as i have been with other javascript files using node inspect and setting breakpoints</p>
+        <p>just need to do the initial c to get the server running at port 5000</p>
         <h2 id="dec-19"><a class="header-link" href="#dec-19">DEC 19</a></h2>
         <p>learning about forms in react</p>
         <p>onChange event listeners on each of the inputs</p>
