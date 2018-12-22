@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Harrison Malone</title>
+    <title>Notes</title>
     <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,7 +15,7 @@
         <p>hence the middleware name</p>
         <p>we did an example where we found a user and then checked if the username and password were correct based on a post request that was sent from the client</p>
         <p>we added to the request object so that it had a req.user key and a user as it's attribute which we then accessed in the app.post where we passed in the middleware</p>
-        <p>the status on the reponse is always set to 200, we can override it with the res.status() function</p>
+        <p>the status on the response is always set to 200, we can override it with the res.status() function</p>
         <p>discovered that you can debug express in the same way as i have been with other javascript files using node inspect and setting breakpoints</p>
         <p>just need to do the initial c to get the server running at port 5000</p>
         <h2 id="dec-19"><a class="header-link" href="#dec-19">DEC 19</a></h2>
@@ -31,7 +30,7 @@
         <p>finished off the put part of the form app, pretty similar to post in terms of calling the same axios method in react, and then accessing the req.body</p>
         <p>however the tricky part was working out what to pass in as params</p>
         <p>in this case params were a username, so you kind of had to know the username, but in a full stack web app you'd surely have easy access to the current user or whatever you needed to edit</p>
-        <p>this whole project is a great example of the power of passing parent methods down as props, used the same submitForm method to access the user that was generated from state in the form child</p>        
+        <p>this whole project is a great example of the power of passing parent methods down as props, used the same submitForm method to access the user that was generated from state in the form child</p> 
         <p>to insert data into express (from api) need to firstly run the localhost:5000/data end point, would probably have database setup to remove this</p> 
         <h2 id="dec-18"><a class="header-link" href="#dec-18">DEC 18</a></h2>
         <p>new way of doing fetch</p>

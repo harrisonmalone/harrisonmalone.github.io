@@ -1,20 +1,29 @@
 /* elements  */
 
-p, h1, h2, h3, h4, h5, h6 {
-    font-family: 'Source Code Pro', monospace;
+h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif;
     word-wrap: break-word;
 }
+
 h1, h2 {
     border-bottom: 1px dotted;
 }
+
+p {
+    font-family: serif;
+    font-size: 20px;
+}
+
 a {
     text-decoration: none;
     color: dodgerblue;
     border-bottom: 1px solid dodgerblue;
 }
+
 h2 .header-link {
     border-bottom: none;
 }
+
 /* classes */
 
 .wrapper {
