@@ -10,6 +10,16 @@
 </head>
 <body>
     <div class="wrapper">
+        <h2 id="jan-9"><a class="header-link" href="#jan-9">JAN 9</a></h2>
+        <p>went through the structure of setting up backend again with controllers and models as seperate directories</p>
+        <p>require('./controllers') points to the index.js file</p>
+        <p>the index.js file then points to either the '/public' or '/protected'</p>
+        <p>challenge for organising app</p>
+        <p>the setup is the same as yesterday expect we created an auth file (auth controller) to deal with all tokens and logins</p>
+        <p>we used the synchronous way of dealing with .sign for jwt tokens</p>
+        <p>we attached the token to the headers in postman to deal with the decoding part using .verify</p>
+        <p>mongoose queries are <a href="https://stackoverflow.com/questions/53970784/mongoose-promises-documentation-says-queries-are-not-promises">thenables</a>, theu are not actual promises but have the option of using .then</p>
+        <p>more information on this <a href="https://mongoosejs.com/docs/queries.html">idea here</a></p>            
         <h2 id="jan-8"><a class="header-link" href="#jan-8">JAN 8</a></h2>
         <p>difference between public and private routes</p>
         <p>private routes have some kind of authentication associated  to them</p>
