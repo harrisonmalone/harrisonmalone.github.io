@@ -6,17 +6,266 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Harrison Malone</title>
     <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="wrapper">
+        <h2 id="jan-21"><a class="header-link" href="#jan-21">JAN 21</a></h2>
+        <p>last night and this morning went through the way in which you'd upload images from react to node, and then in node you connect to the <a href="https://cloudinary.com/documentation/node_image_upload#server_side_upload">cloudinary api</a></p>
+        <p>cloudinary api pretty intuitive, the most complex part was figuring out how you pass a form data object from react so that you can handle it in node</p>
+        <p>you need middleware to get this done and we do this with <a href="https://github.com/expressjs/multer">multer</a></p>
+        <p>multer requires a little bit of config but nothing too crazy, you have the option to store the file locally or in a memory buffer</p>
+        <p>jon helped me separate the code out into different files and turn the cloudinary api logic into a promise so that when the promise is done you can do stuff with mongoose</p>
+        <p>code for this project</p>
+        <p><a href="https://www.strava.com/activities/2093482265">ran</a> with moose</p>
+        <p>work on passport tomorrow</p>    
+        <h2 id="jan-20"><a class="header-link" href="#jan-20">JAN 20</a></h2>
+        <p>cleaned house, bought food and walked moose</p>
+        <p>caught up with spoons</p>
+        <p>tonight after dinner need to code</p>
+        <p>vacuum tuesday morning potentially or come home early and get it done, no point doing it now as there will just be moose hairs everywhere the next day</p>
+        <p>can also buy some flowers on the way home from work on tuesday</p>
+        <p>guitar is now sold which frees me up to purchase keyboard, it is around 400 but i think that's absolutely worth it</p>            
+        <h2 id="jan-19"><a class="header-link" href="#jan-19">JAN 19</a></h2>
+        <p>run, walked moose in the morning</p>
+        <p>australian open</p>
+        <p>lines were nuts, maybe first saturday isn't the best day to go on</p>
+        <p>but saw some nice tennis in the late afternoon, shade and a good seat is key as one person can go out and get drinks / more food</p>
+        <p>awesome dinner at <a href="https://hanoihannah.com.au/">hanoi hannah</a>, nice that they had the big feast of different dishes for $39 each</p>
+        <p>yo chi and dropped home</p>            
+        <h2 id="jan-18"><a class="header-link" href="#jan-18">JAN 18</a></h2>
+        <p>working on projects</p>
+        <p>helped out with corey's issue configuring his react app</p>
+        <p>helped out with sam's issue using a switch and looping through the result he was getting back from a weather api to dynamically set a class</p>
+        <p>helped out with a few different data structure discussions</p>
+        <p>wrote some nice code that involved <a href="https://gist.github.com/harrisonmalone/541f7ab47d731bc32e13e3ab0d39f788">creating ingredient objects</a> that weren't already in the database, involved returning a promise out of a function</p>
+        <p>took a class that went through react and how to store references</p>
+        <p>best option for xkey might be to ship it to becs place and then prepare to pay the extra dollars for shipping</p>
+        <p>available on the <a href="https://www.bhphotovideo.com/c/product/1245247-REG/cme_xkey_37_air_xkey_air_37.html">b &amp; h website</a>, at least i trust them to handle the product correctly</p>
+        <h2 id="jan-17"><a class="header-link" href="#jan-17">JAN 17</a></h2>
+        <p>in the morning helping with the mini mern project as well as getting briefed on projects people were working on</p>
+        <p>configured all my end points</p>
+        <p>worked out the way you have multiple models</p>
+        <p>some good time was spent in the afternoon going through git concepts</p>
+        <p><a href="https://www.strava.com/activities/2084261930#kudos">run</a></p>            
+        <h2 id="jan-16"><a class="header-link" href="#jan-16">JAN 16</a></h2>
+        <p>showed matt app i made yesterday</p>
+        <p>get some feedback on it</p>
+        <p>running through distributed deployment</p>
+        <p>mlab config</p>
+        <p>.env variables</p>
+        <p>read through the cloudinary docs</p>
+        <p>passing the .env variable into the .connect mongodb method call</p>
+        <p>you want to have both a dev url and a production url, when you push to production it connects to that one and in production it's all good</p>
+        <p>went through a bunch of git stuff</p>
+        <p>need to delete git folder that's automatically created in create react app</p>
+        <p>installed now</p>
+        <p>configuring now with a now.json file</p>
+        <p>deploy script in npm json</p>
+        <p>so when we run npm deploy it runs now and now alias</p>
+        <p>configuring the .env variables in react the .env file needs to be at the root</p>
+        <p>npm run build creates a build folder for our front end that we can then use to deploy</p>
+        <p>the path for netlify to deploy is just build</p>
+        <p>jon recording a video that makes things a little more seamless in terms of doing the build</p>            
+        <h2 id="jan-15"><a class="header-link" href="#jan-15">JAN 15</a></h2>
+        <p>morning was revising javascript and building mern app</p>
+        <p>lots of questions regarding fundamentals</p>
+        <p>built login app for quote and image</p>
+        <p>lunch at tahini</p>
+        <p>afternoon was spent in java and again built upon login app</p>
+        <h2 id="jan-14"><a class="header-link" href="#jan-14">JAN 14</a></h2>
+        <p>using passport for storing sessions and cookies</p>
+        <p>can also use it for oauth, get the user profile back from an external service like Google or Github</p>
+        <p>express can be used as a full stack app, make sure when you're reading through the docs that you're looking at examples for express as purely a backend</p>
+        <p>serialization is the process of turning something that exists in memory into a big long string</p>
+        <p>deserialization is the reverse, we're turning our data structure that we have stored as a string (JSON) into a javascript object</p>
+        <p>passport uses done as its next</p>
+        <p>was great to knock off the basics for the auth quote app with jwt and bcrypt</p>
+        <p>need to implement react router to it</p>
+        <p>chuck that project up on github when you have completed this part</p>
+        <p>up to 58.40 in the router video</p>    
+        <h2 id="jan-13"><a class="header-link" href="#jan-13">JAN 13</a></h2>
+        <p><a href="https://www.strava.com/activities/2074509210">run</a> with hamish</p>
+        <p>coffee and cricket with pod and hamish 🏏</p>
+        <p>jakes dinner with dad</p>
+        <h2 id="jan-12"><a class="header-link" href="#jan-12">JAN 12</a></h2>
+        <p>late wake up due to jakes birthday celebrations</p>
+        <p>cleaned up house as things were very messy</p>
+        <p>life admin, washing, outside cleanup</p>
+        <p>watched some cricket (probably should have written code)</p>
+        <p><a href="https://www.strava.com/activities/2072276833">run</a> with jake</p>
+        <p>chilled at night, walked clown</p>
+        <p>watched an episode of <a href="https://en.m.wikipedia.org/wiki/The_Sopranos">the sopranos</a> could be a good tv show to try and get through</p>
+        <h2 id="jan-11"><a class="header-link" href="#jan-11">JAN 11</a></h2>
+        <p><a href="https://gist.github.com/harrisonmalone/883e87fb93072752781e8908e8bed6f4">middleware express challenge</a> making your own function that does something similar to .get</p>
+        <p><a href="https://gist.github.com/harrisonmalone/f178cb55ed2babfbefe28292c89b4bdd">this challenge</a></p>
+        <p>matt was taking the rest of the class in a review</p>
+        <p>special tests handed out</p>
+        <p>after lunch i worked on a <a href="https://gist.github.com/harrisonmalone/91013c29e1fad4839bdcfc4ffa7e4f01">prototype challenge</a> that added a toString() method to built in javascript objects</p>
+        <p>class then looked at javascript library quickly, would like to play around with marked</p>
+        <p>went through this, hashing and decryption with matt</p>
+        <p>met with some of the groups to discuss their idea and what their client has suggested</p>
+        <p>weekend, need to run through react router, submitting form example, the markdown app, the express middleware code</p>
+        <p>also need to go for two runs, maybe go for run straight after work today, doesn't have to be a huge one</p>        
+        <h2 id="jan-10"><a class="header-link" href="#jan-10">JAN 10</a></h2>
+        <p>the for attribute in a form label does a few things, good for screen readers and automatically gives focus to the form input linked to the label (the blue highlighting)</p>
+        <p>using the same form as what we created before the term break which has a change event on both inputs, and handles that change in a function</p>
+        <p>sending up an axios post request</p>
+        <p>axios.post(url, data).then.catch</p>
+        <p>to get full error message in a .catch use error.response</p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage">local storage</a> is in application in developer tools</p>
+        <h2 id="jan-9"><a class="header-link" href="#jan-9">JAN 9</a></h2>
+        <p>went through the structure of setting up backend again with controllers and models as separate directories</p>
+        <p>require('./controllers') points to the index.js file</p>
+        <p>the index.js file then points to either the '/public' or '/protected'</p>
+        <p>challenge for organizing app</p>
+        <p>the setup is the same as yesterday expect we created an auth file (auth controller) to deal with all tokens and logins</p>
+        <p>we used the synchronous way of dealing with .sign for jwt tokens</p>
+        <p>we attached the token to the headers in postman to deal with the decoding part using .verify</p>
+        <p>mongoose queries are <a href="https://stackoverflow.com/questions/53970784/mongoose-promises-documentation-says-queries-are-not-promises">thenables</a>, theu are not actual promises but have the option of using .then</p>
+        <p>more information on this <a href="https://mongoosejs.com/docs/queries.html">idea here</a></p>            
+        <h2 id="jan-8"><a class="header-link" href="#jan-8">JAN 8</a></h2>
+        <p>difference between public and private routes</p>
+        <p>private routes have some kind of authentication associated  to them</p>
+        <p>public routes are just the parts of your app that anyone can view without any kind of auth</p>
+        <p>dividing up your api.js into protected.js and public.js</p>
+        <p>these files are also now living in the controller folder</p>
+        <p>they are controllers</p>
+        <p>introduction of creating an instance of express.Router()</p>
+        <p>and instead of app.use we're using router.use</p>
+        <p>the index.js file within controllers then</p>            
+        <h2 id="jan-7"><a class="header-link" href="#jan-7">JAN 7</a></h2>
+        <p>watch <a href="https://youtu.be/TXspU8o631k">this</a> tonight after till walk</p>
+        <p>did a review of everything we've done since starting the MERN stack</p>
+        <p>took a deep dive into <a href="https://facebook.github.io/create-react-app/docs/proxying-api-requests-in-development#configuring-the-proxy-manually">proxy config</a> (instead of the cors package) and using a setupProxy.js file</p>
+        <p>worked on a <a href="https://m0218.herokuapp.com/challenges/06_MERN/build_an_inspiration_app.md">challenge</a> throughout the day which involved just fetching data from 2 different APIs</p>
+        <p>one was a random quote generator and the other was an image generator</p>
+        <p>learnt about Promise.all and how to implement it</p>
+        <h2 id="jan-6"><a class="header-link" href="#jan-6">JAN 6</a></h2>
+        <p><a href="http://www.allansbillyhyde.com.au">allan&#8217;s</a> stocks the xkey (currently out of stock but could get them to import it in)</p>
+        <p>really just want to test it out</p>
+        <p>maybe shoot them an email about it</p>
+        <p>want to watch <a href="https://itunes.apple.com/au/movie/black-panther-2018/id1342065788">black panther</a> as i&#8217;m still yet to see it</p>
+        <p>if i manage to sell the guitar i&#8217;ll go out and get the keyboard 🎸</p>
+        <p>nice straight swap </p>
+        <h2 id="jan-5"><a class="header-link" href="#jan-5">JAN 5</a></h2>
+        <p>wrote down <a href="https://twitter.com/harrisonnmalone/status/1081360504205991936?s=21">my goals</a> for the year ⭐️</p>
+        <p>brydge got back to me</p>
+        <p>go buy bagels for lunches tomorrow</p>
+        <p>the shortcut to change language mode in vs code is cmd k (like to see mark-down preview) and then m</p>
+        <p>you can also get to terminal in vs code (which you might have to do sometimes) via option shift tilda</p>
+        <p>bought a bunch of things today&#8230; now have black jacket, went for the kathmandu as that will be the most versatile, fixed up iphone battery, also bought new lightning cable and case</p>
+        <p>bought more groceries and super glue</p>
+        <p>sent brydge</p>
+        <p>vodafone plan seems all good, check billing when it comes through but my vodafone account is displaying the correct thing</p>
+        <p>things left to buy</p>
+        <p>potentially a toaster at work but i should email tania and ask about this, would be a nice thing to have on level 8</p>
+        <p>bluetooth keyboard, maybe set this as a goal purchase, maybe the end of the current boot camp which is the 8th of feb</p>
+        <p>will set you back $300 so it&#8217;s fairly substantial </p>
+        <p>have some nice notes about what i&#8217;m using my different apple products for</p>
+        <p>can turn it into a short little blog post </p>
+        <h2 id="jan-4"><a class="header-link" href="#jan-4">JAN 4</a></h2>
+        <p>recovery day today</p>
+        <p>was hot af ☀️</p>
+        <p>wasn't ever going to get much outdoor stuff done</p>
+        <p><a href="https://overcast.fm/+LJRdgzR6M">made a podcast</a> with omas</p>
+        <p>remember that editing shortcut is option [ or ]</p>
+        <p>jobs still to do</p>
+        <p>go to kathmandu look for jacket</p>
+        <p>apple store appointment (5.15 tomorrow)</p>
+        <p>go to vodafone and see what my current status is, i think i purchased an upgrade but no idea when this kicks in or what action i need to take</p>
+        <p>wait for brydge to respond</p>
+        <p>take cds to op shop</p>
+        <p>download jon's files</p>
+        <p>did end up watching <a href="https://en.m.wikipedia.org/wiki/The_Master_(2012_film)">the master</a> which was average, not my favourite pick recently</p>
+        <h2 id="jan-3"><a class="header-link" href="#jan-3">JAN 3</a></h2>
+        <p>went to a few wineries around the mornington peninsula region</p>
+        <p><a href="https://www.polperrowines.com.au/">polperro winery</a> was easily my favorite because it was more casually set up, we also drank the most there 🍷</p>
+        <p><a href="https://www.tgallant.com.au/">tgallant</a> had some great pizzas, nice place for a more relaxing day</p>
+        <p>short run with till in the morning</p>
+        <h2 id="jan-2"><a class="header-link" href="#jan-2">JAN 2</a></h2>
+        <p>i don&#8217;t really love the brydge keyboard, maybe put it up on gumtree and hope someone buys it for like $75</p>
+        <p>what i could get (maybe in a month or so) is the same keyboard as i currently have, there are definitely quite a few bugs happening with it now but i have to say that i love the typing experience on it</p>
+        <p>i think i&#8217;m just so used to it now that i couldn&#8217;t switch back</p>
+        <p>i just like the different feel for this keyboard, it&#8217;s more suitable for around the house on your lap usage, i can have it in the bathroom and it doesn&#8217;t feel unnatural like the brydge keyboard feels</p>
+        <p>i would love to go mac mini and basic midi synth at home just to mess about with, but maybe it&#8217;s a bit of a stretch for right now, maybe look for a used mac mini on sale, new one just wouldn&#8217;t be worth it because i&#8217;d also need a monitor</p>
+        <p>for now buy a new keyboard for ipad, maybe a macbook air, i&#8217;d need to test out how i like the macbook airs new keyboard 🎹</p>
+        <p>today: install bike lights, watch react lecture, keep ploughing away with the bookmarks app</p>
+        <p>just had an idea for cds, take out all the disks and put them into a sleeve, put covers of disks (case included) into a frame to make like a collage of disks</p>
+        <p>i think that would a kind of cool usage of space </p>
+        <p>a cd burner would be a nice way to deal with getting audio in my car if i have mates around</p>
+        <p>my system worked well back in the day, just didn&#8217;t have access to a burner, i would trust this <a href="https://www.amazon.com.au/LG-Electronics-Portable-External-Support/dp/B00ODDE33U/ref=sr_1_7?ie=UTF8&amp;qid=1546395485&amp;sr=8-7&amp;keywords=external+cd+drive">lg one</a></p>
+        <p>could be a good way to test out how nice <a href="https://amazon.com.au">amazon.com.au</a> really is</p>
+        <p>another thing just realised, donate cds to op shop, just no use for them anymore, cluttering up space</p>
+        <p>keeping a couple just to have proof of what cds were like back in the day</p>
+        <p>head to aldi with cds</p>
+        <p>what i need: trash bags, bread, yoghurt, milk, bagels (glicks)</p>
+        <p>put cds into trash bag and leave out the back of the salvo&#8217;s in bentleigh, could also donate some ps2 and 3 games, just have 3 classics or whatever you think is worthy of saying this is what it was like back in the day</p>
+        <p>maybe buy this and connect it to an <a href="https://www.amazon.com/Portable-CME-37-Bluetooth-Connected/dp/B01CKGTT6C/ref=sr_1_1?ie=UTF8&amp;qid=1546426757&amp;sr=8-1&amp;keywords=xkey+air+37">ipad</a></p>
+        <p>this is definitely a far cheaper option for me, i also get better usage out of my ipad and can stay in the ipad ecosystem</p>
+        <p>i think it will have a similar feel to what i like about the ipad keyboard</p>
+        <p>i really need a keyboard just to mess about with but not take up too much space</p>
+        <p>this also gives me the power to record properly and test out new iOS music apps which are hopefully on the verge of a boom (if apple make iOS 13 awesome)</p>
+        <p>i want my ipad to be my device that i mess about with at home</p>
+        <p>and the mac to be purely work and coding focussed</p>
+        <p><a href="https://www.strava.com/activities/2049762024">run</a> today was solid, despite classic giant wind coming from the south</p>
+        <h2 id="jan-1"><a class="header-link" href="#jan-1">JAN 1</a></h2>
+        <p>back from falls</p>
+        <p>happy new year</p>
+        <h2 id="dec-29"><a class="header-link" href="#dec-29">DEC 29 - 31</a></h2>
+        <p>falls</p>
+        <h2 id="dec-28"><a class="header-link" href="#dec-28">DEC 28</a></h2>
+        <p>run</p>
+        <p>work on code for a few hours</p>
+        <p>organise all clothes and camping stuff, maybe go and buy a chair</p>
+        <p>could also go op shopping and search for an outfit for everyone</p>
+        <p>get jakes help with groceries, alcohol and car</p>
+        <p>go to kevs, get kev to pack everything in</p>
+        <h2 id="dec-27"><a class="header-link" href="#dec-27">DEC 27</a></h2>
+        <p>got through some <a href="https://www.strava.com/activities/2037401281">k&#8217;s</a> this morning</p>
+        <p>going to bbq, really need to watch that lecture this evening and do some work</p>
+        <p>when i get back from falls head to vodafone, i think i&#8217;m entitled now to a much better deal</p>
+        <p><a href="https://www.vodafone.com.au/plans/sim-only">lots more data</a> which makes a big difference for me in terms of consumption of apple music</p>
+        <h2 id="dec-26"><a class="header-link" href="#dec-26">DEC 26</a></h2>
+        <p>went to the cricket</p>
+        <p>test cricket can really be boring sometimes 😐 </p>
+        <h2 id="dec-25"><a class="header-link" href="#dec-25">DEC 25</a></h2>
+        <p>christmas day</p>
+        <p>strong <a href="https://www.strava.com/activities/2034060557">run</a> in the morning, have done 34k in the past 3 days 🎄</p>
+        <p>boxing day tomorrow, early wake up</p>
+        <p>need to work on some code 27th and 28th</p>
+        <p><a href="https://tv.apple.com/au/movie/escape-from-new-york/umc.cmc.3hubbyao5k45o0mk8y4kz1yh9">escape from new york</a> is good but it&#8217;s not ground breaking</p>
+        <p>i can see why it has that cult classic status</p>
+        <p>some thoughts on this keyboard, you do need to hit the keys a bit harder than usual to actually get the things to trigger</p>
+        <p>its similar to the mac, it takes a solid press down to get the right text input, you&#8217;ll get used to the keyboard but you&#8217;ll make some mistakes initially, the other thing too is that the keys are a slightly different shape, it&#8217;s like typing on a pc </p>
+        <h2 id="dec-24"><a class="header-link" href="#dec-24">DEC 24</a></h2>
+        <p>today schedule = run, write, watch lecture, op shop, dog</p>
+        <p><a href="./posts/readingmanagement.html">article about how i manage my reading and bookmarks</a>, not perfect but can polish it at a later date</p>
+        <h2 id="dec-23"><a class="header-link" href="#dec-23">DEC 23</a></h2>
+        <p><a href="https://en.m.wikipedia.org/wiki/The_Princess_Bride_(film)">the princess bride</a> is a great flick, a lot of classic scenes, i can see why it has the recognition that it has</p>
+        <p>wrote some notes about things to bring back to work next year</p>
+        <p><a href="https://www.strava.com/activities/2030626061#kudos">run</a> today felt solid</p>
+        <p>tomorrow wouldn&#8217;t mind writing a post about how i&#8217;m using <a href="https://blogtrottr.com">blogtrotter</a> or even more generally how i&#8217;m organising my reading material</p>
+        <p>this includes things like pinboard and my email subscriptions etc</p>
+        <p>maybe other things that i&#8217;d like to include in my reading</p>
+        <p>also how i&#8217;m keeping with certain things through podcasts </p>
+        <h2 id="dec-22"><a class="header-link" href="#dec-22">DEC 22</a></h2>
+        <p>reverted back to basic fonts, played around with some hover effects but nothing really suited what i wanted</p>
+        <p>keys to this websites style, don't worry about the displaying reading text, it's only problematic in safari on ipad and mac, iphone safari doesn't cause issues</p>
+        <p>important to get links going, it adds colour to an otherwise blank page</p>
+        <p>need to share more photos taken in recent times, for example this photo of <a href="https://dl.dropboxusercontent.com/s/jlc008hrpfvjz25/dad_and_jake.jpg?dl=0">jake and my dad</a></p>
+        <p>also try and get some more writing done over the break</p>
+        <p>10am - 6pm is bad to call europe, other hours are when mum will be up</p>
+        <h2 id="dec-21"><a class="header-link" href="#dec-21">DEC 21</a></h2>
+        <p>built a basic full stack MERN app</p>
+        <p>class finished early for christmas break</p>
+        <p>remember to post the video of the code along up</p>
         <h2 id="dec-20"><a class="header-link" href="#dec-20">DEC 20</a></h2>
         <p>middleware is just a function that runs before the (req, res) =&gt; callback occurs</p>
         <p>hence the middleware name</p>
         <p>we did an example where we found a user and then checked if the username and password were correct based on a post request that was sent from the client</p>
         <p>we added to the request object so that it had a req.user key and a user as it's attribute which we then accessed in the app.post where we passed in the middleware</p>
-        <p>the status on the reponse is always set to 200, we can override it with the res.status() function</p>
+        <p>the status on the response is always set to 200, we can override it with the res.status() function</p>
         <p>discovered that you can debug express in the same way as i have been with other javascript files using node inspect and setting breakpoints</p>
         <p>just need to do the initial c to get the server running at port 5000</p>
         <h2 id="dec-19"><a class="header-link" href="#dec-19">DEC 19</a></h2>
@@ -31,7 +280,7 @@
         <p>finished off the put part of the form app, pretty similar to post in terms of calling the same axios method in react, and then accessing the req.body</p>
         <p>however the tricky part was working out what to pass in as params</p>
         <p>in this case params were a username, so you kind of had to know the username, but in a full stack web app you'd surely have easy access to the current user or whatever you needed to edit</p>
-        <p>this whole project is a great example of the power of passing parent methods down as props, used the same submitForm method to access the user that was generated from state in the form child</p>        
+        <p>this whole project is a great example of the power of passing parent methods down as props, used the same submitForm method to access the user that was generated from state in the form child</p> 
         <p>to insert data into express (from api) need to firstly run the localhost:5000/data end point, would probably have database setup to remove this</p> 
         <h2 id="dec-18"><a class="header-link" href="#dec-18">DEC 18</a></h2>
         <p>new way of doing fetch</p>
