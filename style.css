@@ -34,3 +34,12 @@ h2 .header-link {
     text-decoration: none;
     color: black;
 }
+
+.dateline {
+    font-size: 1em;
+    color: #aaa;
+    margin-top: -.75em;
+    margin-bottom: 1em;
+    font-weight: normal;
+    font-family: sans-serif;
+}
