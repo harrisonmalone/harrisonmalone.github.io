@@ -11,6 +11,7 @@ h1, h2 {
 p {
     font-size: 18px;
     word-wrap: break-word;
+    line-height: 1.4;
 }
 
 a {
