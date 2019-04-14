@@ -1,0 +1,43 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.card-outer {
+  width: 33%;
+}
+
+.card-inner {
+  margin: 10px;
+  border: 1px solid rgba(1, 1, 1, 0.1);
+  border-radius: 3px;
+  height: 100px;
+  display: flex;
+}
+
+.emoji {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.title {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.info-to-append {
+  display: none;
+}
+
+@media only screen and (max-width: 550px) {
+  .card-outer {
+    width: 100%;
+  }
+}
