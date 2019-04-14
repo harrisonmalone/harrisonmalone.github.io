@@ -1,3 +1,5 @@
+# harrisonmalone.com
+
 ### About
 
 This is a project started mid way through my first cohort working at CoderAcademy. It's a diary of sorts; mostly documenting the things we're covering in class but includes some other more general diary writing as well ✨.
